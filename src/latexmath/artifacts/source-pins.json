@@ -11,5 +11,13 @@
     "lib/latexmath/parser/source_map.rb": "651ed2b7f743a9ca5bd62c575c9daef14633cf3ac9b942dad6ac85a4b789ffca"
   },
   "parsanol_python_commit": "b92d4f94c0eacd0fa1ae9424e25c88fef529071c",
-  "boundary": "legacy-raw-tree-with-slice-wires-and-normalized-shape"
+  "boundary": "legacy-raw-tree-with-slice-wires-and-normalized-shape",
+  "optional_model_abi": {
+    "sha256": "e1c442452b03dc761869356aa355345a7cb466c53d835be4465a838e35613221",
+    "header_sha256": "1e871cac964c0014e4e5e7b5ecac2e116e7fa77f91ae1e607c88e851e582e808",
+    "abi_version": 1,
+    "producer_receipt": "handoffs/codex-rust/latexmath-abi-check.json",
+    "producer_receipt_sha256": "3e09952dfbcf5dbe09c9dc8bd1640af93f2cf6911a39f07654c38862de570899",
+    "source_head": "65435f8f994bfb1e61a11d319f88f843b8a5f46d"
+  }
 }

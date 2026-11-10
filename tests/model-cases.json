@@ -1,0 +1,96 @@
+[
+  {
+    "input": "\\alpha+1",
+    "decimal": ".",
+    "model": {
+      "expression": {
+        "expression": {
+          "expression": {
+            "number": "1"
+          },
+          "sequence": {
+            "operant": "+"
+          }
+        },
+        "sequence": {
+          "symbols": {
+            "spelling": "alpha",
+            "value": "α",
+            "kind": "symbol"
+          }
+        }
+      },
+      "decimal": "."
+    }
+  },
+  {
+    "input": "\\sqrt{x}",
+    "decimal": ".",
+    "model": {
+      "expression": {
+        "binary": {
+          "intermediate_exp": {
+            "expression": {
+              "symbols": {
+                "spelling": "x",
+                "value": "x",
+                "kind": "symbol"
+              }
+            }
+          },
+          "sqrt": "sqrt"
+        }
+      },
+      "decimal": "."
+    }
+  },
+  {
+    "input": "\\frac{a}{b}",
+    "decimal": ".",
+    "model": {
+      "expression": {
+        "binary": {
+          "binary": {
+            "literal": "frac"
+          },
+          "first_value": {
+            "expression": {
+              "symbols": {
+                "spelling": "a",
+                "value": "a",
+                "kind": "symbol"
+              }
+            }
+          },
+          "second_value": {
+            "expression": {
+              "symbols": {
+                "spelling": "b",
+                "value": "b",
+                "kind": "symbol"
+              }
+            }
+          }
+        }
+      },
+      "decimal": "."
+    }
+  },
+  {
+    "input": "1,5",
+    "decimal": ",",
+    "model": {
+      "expression": {
+        "number": "1,5"
+      },
+      "decimal": ","
+    }
+  },
+  {
+    "input": "",
+    "decimal": ".",
+    "model": {
+      "decimal": "."
+    }
+  }
+]
