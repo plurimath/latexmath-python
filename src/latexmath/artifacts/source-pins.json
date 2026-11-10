@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/plurimath/latexmath",
+  "commit": "ce2ebdd4ab34e79d92a7edbbcea22ef2c598da23",
+  "files": {
+    "artifacts/latex.json": "2e8e17ce8490211ea6d78c6bb55ff7125a47b3537211b72c1bb7677432c7e5b3",
+    "artifacts/latex.bindings.python.json": "49ece376dd5639731a2ce62aac8c5e45ec0edc77ebb65261b4cffa9478dad436",
+    "grammars/latex.parg": "a1025ab6e3570568d70bc823e9e61b50da484ecbf203eb318837578954300a44",
+    "lib/latexmath/parser/preprocessor.rb": "944b53ef8c86c0ebbf91602fe36d69675091f8821dbaf1ed540ac45322895388"
+  },
+  "parsanol_python_commit": "b92d4f94c0eacd0fa1ae9424e25c88fef529071c",
+  "boundary": "normalized-raw-tree-and-python-bindings"
+}
