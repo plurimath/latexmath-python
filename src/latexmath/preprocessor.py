@@ -18,7 +18,7 @@ def preprocess(source):
     groups = iter(match.group() for match in _TEXT.finditer(source))
     text = _hex_encode(_ENTITY.sub(_decode_entity, source))
     text = re.sub(r"(?<!\\) |\n+", "", text)
-    text = text.replace("\\\\ ", "\\\\\\\\").replace("&#x26;", "&").replace("&#x22;", '"')
+    text = text.replace('\\\\ ', '\\\\').replace("&#x26;", "&").replace("&#x22;", '"')
     text = re.sub(r"(?<!\\\\)\\&#xa;", lambda _: "\\ ", text).replace("&#xa;", "")
     text = _TEXT.sub(lambda _: next(groups, ""), text)
     return text, None, False
