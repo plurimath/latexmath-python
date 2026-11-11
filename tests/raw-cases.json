@@ -1,0 +1,295 @@
+[
+  {
+    "input": "",
+    "ok": false,
+    "char_offset": 0,
+    "byte_offset": 0
+  },
+  {
+    "input": "\\frac{a}{b}",
+    "tree": {
+      "binary": {
+        "binary": {
+          "offset": 1,
+          "length": 4,
+          "line": 1,
+          "column": 2,
+          "value": "frac"
+        },
+        "first_value": {
+          "expression": {
+            "symbols": {
+              "offset": 6,
+              "length": 1,
+              "line": 1,
+              "column": 7,
+              "value": "a"
+            }
+          }
+        },
+        "second_value": {
+          "expression": {
+            "symbols": {
+              "offset": 9,
+              "length": 1,
+              "line": 1,
+              "column": 10,
+              "value": "b"
+            }
+          }
+        }
+      }
+    },
+    "ok": true
+  },
+  {
+    "input": "\\text{a b}",
+    "tree": {
+      "text": {
+        "offset": 1,
+        "length": 4,
+        "line": 1,
+        "column": 2,
+        "value": "text"
+      },
+      "first_value": {
+        "offset": 6,
+        "length": 3,
+        "line": 1,
+        "column": 7,
+        "value": "a b"
+      }
+    },
+    "ok": true
+  },
+  {
+    "input": "\\begin{matrix}a&b\\\\c&d\\end{matrix}",
+    "tree": {
+      "environment": {
+        "environment": {
+          "offset": 7,
+          "length": 6,
+          "line": 1,
+          "column": 8,
+          "value": "matrix"
+        },
+        "table_data": {
+          "sequence": {
+            "symbols": {
+              "offset": 14,
+              "length": 1,
+              "line": 1,
+              "column": 15,
+              "value": "a"
+            }
+          },
+          "expression": {
+            "sequence": {
+              "operant": {
+                "offset": 15,
+                "length": 1,
+                "line": 1,
+                "column": 16,
+                "value": "&"
+              }
+            },
+            "expression": {
+              "sequence": {
+                "symbols": {
+                  "offset": 16,
+                  "length": 1,
+                  "line": 1,
+                  "column": 17,
+                  "value": "b"
+                }
+              },
+              "expression": {
+                "sequence": {
+                  "\\\\": {
+                    "offset": 17,
+                    "length": 2,
+                    "line": 1,
+                    "column": 18,
+                    "value": "\\\\"
+                  }
+                },
+                "expression": {
+                  "sequence": {
+                    "symbols": {
+                      "offset": 19,
+                      "length": 1,
+                      "line": 1,
+                      "column": 20,
+                      "value": "c"
+                    }
+                  },
+                  "expression": {
+                    "sequence": {
+                      "operant": {
+                        "offset": 20,
+                        "length": 1,
+                        "line": 1,
+                        "column": 21,
+                        "value": "&"
+                      }
+                    },
+                    "expression": {
+                      "symbols": {
+                        "offset": 21,
+                        "length": 1,
+                        "line": 1,
+                        "column": 22,
+                        "value": "d"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ending": {
+          "environment": {
+            "offset": 27,
+            "length": 6,
+            "line": 1,
+            "column": 28,
+            "value": "matrix"
+          }
+        }
+      }
+    },
+    "ok": true
+  },
+  {
+    "input": "\\alpha+\\beta",
+    "tree": {
+      "sequence": {
+        "symbols": {
+          "offset": 1,
+          "length": 5,
+          "line": 1,
+          "column": 2,
+          "value": "alpha"
+        }
+      },
+      "expression": {
+        "sequence": {
+          "operant": {
+            "offset": 6,
+            "length": 1,
+            "line": 1,
+            "column": 7,
+            "value": "+"
+          }
+        },
+        "expression": {
+          "symbols": {
+            "offset": 8,
+            "length": 4,
+            "line": 1,
+            "column": 9,
+            "value": "beta"
+          }
+        }
+      }
+    },
+    "ok": true
+  },
+  {
+    "input": "  \\frac{1",
+    "ok": false,
+    "char_offset": 9,
+    "byte_offset": 9
+  },
+  {
+    "input": "α }",
+    "ok": false,
+    "char_offset": 2,
+    "byte_offset": 3
+  },
+  {
+    "input": "&pi+x}",
+    "ok": false,
+    "char_offset": 5,
+    "byte_offset": 5
+  },
+  {
+    "input": "\\text{é x} }",
+    "ok": false,
+    "char_offset": 11,
+    "byte_offset": 12
+  },
+  {
+    "input": "1,2+3",
+    "decimal": ",",
+    "tree": {
+      "sequence": {
+        "number": {
+          "offset": 0,
+          "length": 3,
+          "line": 1,
+          "column": 1,
+          "value": "1,2"
+        }
+      },
+      "expression": {
+        "sequence": {
+          "operant": {
+            "offset": 3,
+            "length": 1,
+            "line": 1,
+            "column": 4,
+            "value": "+"
+          }
+        },
+        "expression": {
+          "number": {
+            "offset": 4,
+            "length": 1,
+            "line": 1,
+            "column": 5,
+            "value": "3"
+          }
+        }
+      }
+    },
+    "ok": true
+  },
+  {
+    "input": "1٫2+3",
+    "decimal": "٫",
+    "tree": {
+      "sequence": {
+        "number": {
+          "offset": 0,
+          "length": 9,
+          "line": 1,
+          "column": 1,
+          "value": "1&#x66b;2"
+        }
+      },
+      "expression": {
+        "sequence": {
+          "operant": {
+            "offset": 9,
+            "length": 1,
+            "line": 1,
+            "column": 10,
+            "value": "+"
+          }
+        },
+        "expression": {
+          "number": {
+            "offset": 10,
+            "length": 1,
+            "line": 1,
+            "column": 11,
+            "value": "3"
+          }
+        }
+      }
+    },
+    "ok": true
+  }
+]
