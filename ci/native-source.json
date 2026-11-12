@@ -1,7 +1,7 @@
 {
   "stage": "latexmath",
   "repository": "plurimath/latexmath-rs",
-  "revision": "063fdcea8ec08b7661443138da3e50b5762dda3e",
+  "revision": "f1fa34756096f129c5360991f13846df00e1c307",
   "rust_toolchain": "1.95.0",
   "python_runtime": {
     "repository": "parsanol/parsanol-python",
