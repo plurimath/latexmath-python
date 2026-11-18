@@ -1,12 +1,12 @@
 {
-  "commit": "337262eda0483ceaa43a02cc52362c5b721e5eb3",
-  "generation": 3,
-  "snapshot_digest": "sha256:782cb6ee7c75ec1e38ed343301c2220ad14c283b96e5cf9eac2a4ff39b1aeceb",
-  "note": "Rows this consumer executes from the pinned generation: every raw-tree and every typed-model row. Legacy-oracle payloads (125 corpus rows, 14 rejection rows) are counted, not executed. ids_sha256 is the SHA-256 of the sorted IDs, one per line.",
+  "commit": "9767c37a8d7bb21a0694780ecfcbc4f1fbd9eb39",
+  "generation": 4,
+  "snapshot_digest": "sha256:a657a0c61602ffdc9c02f3533f8671f92e38c42ee679d50ded38efd0e69ae0ce",
+  "note": "Rows this consumer executes from the pinned generation: every raw-tree and every typed-model row (generation 4: generation 3's 139 plus 108 -r2 rows that also record MathSymbol value and kind). Legacy-oracle payloads (125 corpus rows, 14 rejection rows) are counted, not executed. ids_sha256 is the SHA-256 of the sorted IDs, one per line.",
   "executed": {
     "typed-model": {
-      "rows": 139,
-      "ids_sha256": "626cbf935df4a54a04e23c970b3e3eb78e267e5d0b5ba6376037f61a2507815d"
+      "rows": 247,
+      "ids_sha256": "839fcc39fc2f20ab5adb9a693452aafad569b9aa44123b661b63eadbb97605ad"
     },
     "raw-tree": {
       "rows": 139,

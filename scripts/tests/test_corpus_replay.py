@@ -211,7 +211,7 @@ class ComparatorTests(unittest.TestCase):
         recorded = json.loads(replay.EXPECTATION.read_text(encoding="utf-8"))
         for key in ("commit", "generation", "snapshot_digest"):
             self.assertEqual(recorded[key], pin[key])
-        self.assertEqual({b: v["rows"] for b, v in recorded["executed"].items()}, {"raw-tree": 139, "typed-model": 139})
+        self.assertEqual({b: v["rows"] for b, v in recorded["executed"].items()}, {"raw-tree": 139, "typed-model": 247})
 
 
 if __name__ == "__main__":

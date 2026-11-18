@@ -1,11 +1,12 @@
 # The plurimath-testsuite stage generation this binding replays in CI
 # (.github/workflows/ci.yml job `replay`, scripts/corpus_replay.py). Same
-# pin as the Ruby gem plurimath/latexmath, spec/fixtures/testsuite-pin.yml.
+# pin as plurimath/latexmath-ts scripts/corpus-pin.json (generation 4: the
+# Ruby gem plurimath/latexmath generation 3 plus 108 -r2 typed-model rows).
 # Commit, generation and digest change together, in one deliberate upgrade.
 ---
 schema: plurimath-stage/pin/1
 repository: https://github.com/plurimath/plurimath-testsuite
-commit: 337262eda0483ceaa43a02cc52362c5b721e5eb3
+commit: 9767c37a8d7bb21a0694780ecfcbc4f1fbd9eb39
 language: latex
-generation: 3
-snapshot_digest: sha256:782cb6ee7c75ec1e38ed343301c2220ad14c283b96e5cf9eac2a4ff39b1aeceb
+generation: 4
+snapshot_digest: sha256:a657a0c61602ffdc9c02f3533f8671f92e38c42ee679d50ded38efd0e69ae0ce
